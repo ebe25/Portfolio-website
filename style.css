@@ -233,11 +233,11 @@ i:hover {
   font-family: 'Ubuntu', sans-serif;
 }
 
-.typical::after {
+/* .typical::after {
   font-weight: 100;
   content: '|';
   animation: blinker 300ms linear infinite;
-}
+} */
 
 @keyframes blinker {
   50% {
@@ -279,7 +279,7 @@ i:hover {
 .profile-picture-background {
   height: 94%;
   width: 94%;
-  background-image: url('https://raw.githubusercontent.com/monster-anshu/document/master/profile.jpg');
+  background-image: url('1.jpg');
   background-size: cover;
   display: flex;
   justify-content: center;
