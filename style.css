@@ -233,11 +233,12 @@ i:hover {
   font-family: 'Ubuntu', sans-serif;
 }
 
-/* .typical::after {
+
+.typical::after {
   font-weight: 100;
   content: '|';
   animation: blinker 300ms linear infinite;
-} */
+}
 
 @keyframes blinker {
   50% {
@@ -279,7 +280,7 @@ i:hover {
 .profile-picture-background {
   height: 94%;
   width: 94%;
-  background-image: url('1.jpg');
+  background-image: url('1.png');
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -933,5 +934,18 @@ textarea {
 @media screen and (max-width: 360px) {
   .profile-picture {
     --profile-picture: 12rem;
+  }
+}
+#animated-text {
+  display: inline-block;
+  animation: typing 2s steps(20) infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
   }
 }
