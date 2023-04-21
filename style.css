@@ -227,14 +227,14 @@ i:hover {
   transform: scale(1.2);
 }
 
-.typical {
+.animated-text {
   min-height: 55px;
   font-size: 35px;
   font-family: 'Ubuntu', sans-serif;
 }
 
 
-.typical::after {
+.animated-text::after {
   font-weight: 100;
   content: '|';
   animation: blinker 300ms linear infinite;
