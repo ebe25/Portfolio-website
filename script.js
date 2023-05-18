@@ -9,7 +9,7 @@ let x = 0;
 let z = 0;
 
 (function () {
-  emailjs.init("user_NOmaxiUt7C5WnlrHsLiD1");
+  emailjs.init("awlZxecnNZhSaxMw6");
 })();
 
 toSelect.forEach((element, index) => {
@@ -37,8 +37,9 @@ form.addEventListener("submit", (e) => {
     reply_to: document.querySelector("[contact-email]").value,
     message: document.querySelector("[contact-msg]").value,
   };
+  
   emailjs
-    .send("service_qmd9ghs", "template_qatb9ua", data)
+    .send("service_szljjtt", "template_alqjs5m", data)
     .then(function (res) {
       console.log(res);
     });
@@ -52,8 +53,7 @@ let text = [
   "Cross Platform",
   "Web Developer",
   "NodeJS Developer",
-  "Cloud Engineer",
-  "Back-end Devloper",
+  "Back-end Developer",
   "Software Engineer",
 ];
 
