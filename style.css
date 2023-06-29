@@ -415,6 +415,7 @@ i:hover {
   display: flex;
   align-items: baseline;
   width: 100%;
+  
 }
 
 .resume-menu-item {
@@ -435,6 +436,7 @@ i:hover {
   flex-direction: column;
   height: 100%;
   list-style: none;
+  
 }
 
 .resume-card {
@@ -464,7 +466,10 @@ i:hover {
   height: var(--resume-height);
   text-align: left;
   width: 100%;
+  
 }
+
+
 
 .selected {
   border-radius: 1rem;
@@ -546,9 +551,11 @@ li.skill-item {
 
 .resume-text > div:first-child {
   width: calc(100% - 88px);
+
 }
 
 .resume-text {
+ 
   display: flex;
   justify-content: space-between;
   align-items: baseline;
@@ -941,11 +948,43 @@ textarea {
   animation: typing 2s steps(20) infinite;
 }
 
-@keyframes typing {
-  from {
-    width: 0;
+@media (min-width: 770px) and (max-width: 1230px) {
+  .resume-item-li,
+  .resume-item
+  .resume-text {
+    overflow-y: scroll;
   }
-  to {
-    width: 100%;
+
+  .resume-item-li::after {
+    content: "";
+    display: inline-block;
+    height: 1px;
+    background-color: black;
+    margin: 20px 0;
+  }
+
+}
+
+@media (max-width: 620px){
+  .resume-item-li,
+  .resume-item
+  .resume-text {
+    overflow-y: scroll;
+  }
+
+  .resume-item-li::after {
+    content: "";
+    display: inline-block;
+    height: 1px;
+    background-color: black;
+    margin: 20px 0;
   }
 }
+
+
+
+
+
+
+
+
